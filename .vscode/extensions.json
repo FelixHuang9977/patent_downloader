@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "ms-python.debugpy",
+        "ms-python.python",
+        "spencerwmiles.vscode-task-buttons",
+        "leosj29.bash-sh-runner",
+        "rogalmic.bash-debug",
+        "moshfeu.compare-folders",
+        "streetsidesoftware.code-spell-checker",
+        "ms-python.vscode-pylance",
+        //"ms-python.black-formatter",
+        //"seepine.md-editor",
+        //"timonwong.shellcheck",
+    ]
+}

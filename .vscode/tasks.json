@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "task_download_patents",
+            "command": "bash",
+            "type": "shell",
+            "args": [
+                "-c",
+                ".venv/bin/python3 google_patent_downloader.py"
+            ],
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        },
+    ]
+}

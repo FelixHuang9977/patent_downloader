@@ -1,0 +1,30 @@
+{
+    "git.autoRepositoryDetection": true,
+    "git.enabled": true,
+    "python.envFile": "${workspaceFolder}/.vs_py_env",
+    "python.testing.pytestArgs": [
+        "testcase",
+        "benchmark",
+        "stress",
+        "-s"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "makefile.configureOnOpen": false,
+    "autopep8.args": [
+        "--max-line-length",
+        "1000"
+    ],
+    "flake8.args": [
+        "--ignore=E265,E501,E201,E305,E225,E261,E262,E111,E302,E202",
+        "--verbose"
+    ],
+    "VsCodeTaskButtons.showCounter": false,
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "🚀 download patents",
+            "task": "task_download_patents",
+            "tooltip": ""
+        },
+    ]
+}
