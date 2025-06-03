@@ -32,7 +32,8 @@ with pdfplumber.open(r'nv.pdf') as pdf:
                     truncated_item_str=item.replace('\n', ' ')[:40] if item is not None else False
                     fields.append(truncated_item_str) if item is not None else False
 
-                print(f"page={no}, {fields[0]}, {fields[1]}, {fields[2]}")
+                #print(f"page={no}, {fields[0]}, {fields[1]}, {fields[2]}")
+                print(f"{fields[0]}\t{fields[1]}\t{fields[2]}")
                 #spec_str=row[3].replace('\n', ' ') if len(row) > 6 and row[3] is not None else ""
                 #description_str=row[6].replace('\n', ' ') if len(row) > 6 and row[6] is not None else ""
                 #print(f"page={no}, {id_str}, {spec_str}, {description_str}, {row}")
