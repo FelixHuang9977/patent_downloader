@@ -1,8 +1,7 @@
-.venv/bin/python3 img_ocr.py > sbios_text.txt
-cat sbios_text.txt | sed -e '/NVIDIA CONFIDENTIAL/{N;N;d}' -e '/DG-11194-001_1.0/d' -e '/^[ ]*$/d' -e 's/[^[:print:]\t]//g' > sbios_text_tune.txt
-
+#TODO, use AI to do post process seems better
+"""
 echo "RUN AI prompt:"
-exit 0
+
 Read through the entire file and identify all lines that start with 'SBIOS-'
 
 For each matching line, extract and format two specific fields:
@@ -15,3 +14,4 @@ Each SBIOS entry is on a new line
 The ID and description are on the same line, separated by a colon
 The format should be: 'SBIOS-ID: Description'
 Maintain the exact text of both the ID and description as they appear in the original file
+"""
